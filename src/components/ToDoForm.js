@@ -4,7 +4,7 @@ function ToDoForm(props) {
     const [todo, setTodo] = useState({
         id: 0,
         item: '',
-        finished: false
+        completed: false
     });
     function inputChange (e) {
         setTodo({...todo, item: e.target.value, id: props.lastId});
@@ -19,11 +19,12 @@ function ToDoForm(props) {
             const newId = todo.id + 1;
             props.addTask(newId, todo);
             setTodo({...todo, item: ''});
+            form.classList.remove('was-validated');
         }
     }
     return (
         <div className="row justify-content-center">
-            <form className="sol-sm-6 col-lg-5 mb-5 needs-validation" onSubmit={handleSubmitForm} action="" noValidate>
+            <form className=" col-11 col-sm-10 col-md-7 col-lg-5 mb-5 needs-validation" onSubmit={handleSubmitForm} action="" noValidate>
                 <div className="input-group input-group-lg">
                     <input type="text"
                            name="newTask"
@@ -34,7 +35,7 @@ function ToDoForm(props) {
                            onChange={inputChange}
                     />
                     <div className="input-group-append">
-                        <button type="submit" className="btn btn-primary">Add</button>
+                        <button id="submit_btn" type="submit" className="btn btn-primary">Add</button>
                     </div>
                     <div className="invalid-feedback">Please fill out this field.</div>
                 </div>
