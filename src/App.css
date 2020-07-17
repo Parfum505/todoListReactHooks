@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -21,9 +21,12 @@ form #submit_btn {
   border-top-right-radius: 0.3rem;
   border-bottom-right-radius: 0.3rem;
 }
-#todoList [type=text] {
+#todoList [type="text"] {
   border-top-left-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
+}
+#todoList .completed {
+  text-decoration: line-through;
 }
 #todoList .custom-checkbox {
   padding-left: 1.1rem;
