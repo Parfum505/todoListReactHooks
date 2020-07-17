@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4fa4d6e90dfbcf2e22173cd8adc920e3",
+    "revision": "9b9bb1089207f566fe4151aa00760213",
     "url": "/todoListReactHooks/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/todoListReactHooks/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "ed3f173b4d9caf4709f4",
-    "url": "/todoListReactHooks/static/css/main.76bb5ded.chunk.css"
+    "revision": "da1e031f83791c480b55",
+    "url": "/todoListReactHooks/static/css/main.7736cadb.chunk.css"
   },
   {
     "revision": "6d5d16c9fe5235331d18",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/todoListReactHooks/static/js/2.2c13e8e6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ed3f173b4d9caf4709f4",
-    "url": "/todoListReactHooks/static/js/main.c177be3c.chunk.js"
+    "revision": "da1e031f83791c480b55",
+    "url": "/todoListReactHooks/static/js/main.101bbc0b.chunk.js"
   },
   {
     "revision": "090325f87e61520ea813",
