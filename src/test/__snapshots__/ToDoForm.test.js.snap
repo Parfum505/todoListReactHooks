@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToDoForm component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="row justify-content-center"
+  >
+    <form
+      action=""
+      class="col-11 col-sm-10 col-md-7 col-lg-5 mb-5 needs-validation "
+      data-testid="form"
+      novalidate=""
+    >
+      <div
+        class="input-group input-group-lg"
+      >
+        <input
+          class="form-control"
+          id="todo"
+          name="newTask"
+          placeholder="Enter text ..."
+          required=""
+          type="text"
+          value=""
+        />
+        <div
+          class="input-group-append"
+        >
+          <button
+            class="btn btn-primary"
+            id="submit_btn"
+            type="submit"
+          >
+            Add
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</DocumentFragment>
+`;
