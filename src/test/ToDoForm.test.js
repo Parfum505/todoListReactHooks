@@ -23,24 +23,26 @@ describe("ToDoForm component", () => {
   });
 
   test("form submit correctly", () => {
-    const mocAddTask = jest.fn();
+    const mockAddTask = jest.fn();
     const { queryByText, getByPlaceholderText } = render(
-      <ToDoForm addTask={mocAddTask} />
+      <ToDoForm addTask={mockAddTask} />
     );
     const input = getByPlaceholderText("Enter text ...");
     fireEvent.change(input, { target: { value: "test" } });
     fireEvent.click(queryByText("Add"));
+    expect(mockAddTask).toBeCalled();
     expect(queryByText("Please fill out this field.")).toBeNull();
   });
 
   test("form submit empty input", () => {
-    const mocAddTask = jest.fn();
+    const mockAddTask = jest.fn();
     const { queryByText, getByPlaceholderText } = render(
-      <ToDoForm addTask={mocAddTask} />
+      <ToDoForm addTask={mockAddTask} />
     );
     const input = getByPlaceholderText("Enter text ...");
     fireEvent.change(input, { target: { value: "" } });
     fireEvent.click(queryByText("Add"));
+    expect(mockAddTask).not.toBeCalled();
     expect(queryByText("Please fill out this field.")).toBeInTheDocument();
   });
 

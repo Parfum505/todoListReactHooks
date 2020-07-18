@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem testing matches snapshot 1`] = `
+<DocumentFragment>
+  <li
+    class="input-group mb-3"
+    data-testid="listItem"
+    id="1"
+  >
+    <div
+      class="custom-control custom-checkbox"
+    >
+      <input
+        class="custom-control-input"
+        data-testid="checkbox"
+        id="customCheck_1"
+        type="checkbox"
+      />
+      <label
+        class="custom-control-label"
+        for="customCheck_1"
+      >
+         
+      </label>
+    </div>
+    <input
+      class="form-control "
+      data-testid="taskInput"
+      readonly=""
+      type="text"
+      value="to learn Jest"
+    />
+    <div
+      class="input-group-append"
+    >
+      <button
+        class="btn btn-danger input-group-text"
+        data-testid="deleteBtn"
+      >
+        X
+      </button>
+    </div>
+  </li>
+</DocumentFragment>
+`;
